@@ -1,4 +1,4 @@
-# vp-woo-bacs-qr-code
+# Hungarian Bank Transfer QR Code for WooCommerce
 
 Ez a bővítmény az azonnali fizetéshez használható QR kódot generál az átutalásos fizetési módhoz, amit megjelenít a köszönöm oldalon és a fizetésre vár e-mailben.
 
