@@ -41,12 +41,12 @@ class VP_Bacs_Qr_Code {
 
 	//Just for a little extra security
 	public function __clone() {
-		_doing_it_wrong( __FUNCTION__, __( 'Cloning this object is forbidden.', 'woo-pont-shipping' ) );
+		_doing_it_wrong( __FUNCTION__, __( 'Cloning this object is forbidden.', 'vp-bacs-qr-code' ) );
 	}
 
 	//Just for a little extra security
 	public function __wakeup() {
-		_doing_it_wrong( __FUNCTION__, __( 'Unserializing instances of this class is forbidden.', 'woo-pont-shipping' ) );
+		_doing_it_wrong( __FUNCTION__, __( 'Unserializing instances of this class is forbidden.', 'vp-bacs-qr-code' ) );
 	}
 
 	//Construct
@@ -98,28 +98,28 @@ class VP_Bacs_Qr_Code {
 				array(
 					'type' => 'title',
 					'id' => 'vp_bacs_qr_code',
-					'title' => __( 'QR kód beállítások', 'wc-vp-sign-documents' ),
+					'title' => __( 'QR kód beállítások', 'vp-bacs-qr-code' ),
 				),
 				array(
-					'title' => __( 'Közlemény', 'wc-vp-sign-documents' ),
+					'title' => __( 'Közlemény', 'vp-bacs-qr-code' ),
 					'type' => 'text',
-					'desc' => __( 'A generált QR kóddal indított utalás közleménye. Az {order_number} helyettesítő kóddal lehet a rendelés számát beírni. Maximum 70 karakter.', 'wc-vp-sign-documents' ),
+					'desc' => __( 'A generált QR kóddal indított utalás közleménye. Az {order_number} helyettesítő kóddal lehet a rendelés számát beírni. Maximum 70 karakter.', 'vp-bacs-qr-code' ),
 					'id' => 'vp_bacs_qr_code_comment',
 					'value' => get_option('vp_bacs_qr_code_comment'),
 					'placeholder' => '{order_number}'
 				),
 				array(
-					'title' => __( 'Szöveg a QR kód előtt', 'wc-vp-sign-documents' ),
+					'title' => __( 'Szöveg a QR kód előtt', 'vp-bacs-qr-code' ),
 					'type' => 'text',
-					'desc' => __( 'Ez a szöveg jelenik meg a QR kód előtt a pénztár oldalon és a fizetésre vár emailben.', 'wc-vp-sign-documents' ),
+					'desc' => __( 'Ez a szöveg jelenik meg a QR kód előtt a pénztár oldalon és a fizetésre vár emailben.', 'vp-bacs-qr-code' ),
 					'id' => 'vp_bacs_qr_code_before',
 					'value' => get_option('vp_bacs_qr_code_before'),
 					'placeholder' => ''
 				),
 				array(
-					'title' => __( 'Szöveg a QR kód után', 'wc-vp-sign-documents' ),
+					'title' => __( 'Szöveg a QR kód után', 'vp-bacs-qr-code' ),
 					'type' => 'text',
-					'desc' => __( 'Ez a szöveg jelenik meg a QR kód előtt a pénztár oldalon és a fizetésre vár emailben.', 'wc-vp-sign-documents' ),
+					'desc' => __( 'Ez a szöveg jelenik meg a QR kód előtt a pénztár oldalon és a fizetésre vár emailben.', 'vp-bacs-qr-code' ),
 					'id' => 'vp_bacs_qr_code_after',
 					'value' => get_option('vp_bacs_qr_code_after'),
 					'placeholder' => ''
